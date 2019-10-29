@@ -6,21 +6,13 @@ using namespace std;
 void lectura();
 int main(){
     int opcion=0;
-    cout<<"1. Leer archivo txt"<<endl;
-    cout<<"2. Guardar archivo"<<endl;
-    cout<<"3. Justificar texto"<<endl;
-    cout<<"4. Alinear texto a la izquierda"<<endl;
-    cout<<"5. Alinear texto a la derecha"<<endl;
+    lectura();
+    cout<<"1. Justificar texto"<<endl;
+    cout<<"2. Alinear texto a la izquierda"<<endl;
+    cout<<"3. Alinear texto a la derecha"<<endl;
+
     cout<<"Elige alguna opcion:";
     cin>>opcion;
-    switch(opcion){
-        case 1:
-            lectura();
-            break;
-        case 2:
-            cout<<"Hola";
-            break;
-    }
     return 0;
 }
 
