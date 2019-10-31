@@ -39,10 +39,8 @@ void lectura(int opcion) {
         cin >> opcion;
         switch (opcion) {
             case 1: {
-
             }
             case 2: {
-
             }
             case 3: {
                 while (!archivo.eof()) { //mientras no sea final del archivo
@@ -57,7 +55,6 @@ void lectura(int opcion) {
                 }
             }
         }
-
         archivo.close(); //Cerramos el archivo
     }
 }
@@ -77,9 +74,9 @@ void ADerecha(string &texto){
     if(op==1){
         ofstream archivo;
         archivo.open("C://Users/Irvin Coronado/Proyecto/Registro.txt",ios::out);
-
+        archivo<<texto;
+        archivo.close();
     }
-
 }
 void CTexto(string &texto) {
     int espacios;
@@ -88,4 +85,13 @@ void CTexto(string &texto) {
         cout << " ";
     }
     cout << texto << endl;
+    int op;
+    cout <<"1. Guardar \n2. Salir";
+    cin >> op;
+    if(op==1){
+        ofstream archivo;
+        archivo.open("C://Users/Irvin Coronado/Proyecto/Registro.txt",ios::out);
+        archivo<<texto;
+        archivo.close();
+    }
 }
