@@ -9,9 +9,9 @@
 C:/Users/Irvin Coronado/Proyecto/main.cpp
 iostream
 -
-stdlib.h
+cstdlib
 -
-string.h
+cstring
 -
 fstream
 -
